@@ -1,0 +1,95 @@
+<html lang="en">
+
+<head>
+  <title>Index</title>
+  <link rel="shortcut icon" href="Images/logo.png">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+
+  <link rel="stylesheet" href="Css/bootstrap.min.css">
+  <link rel="stylesheet" href="Css/Index.css">
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg p-5">
+    <div class="container align-items-center">
+      <a class="navbar-brand header_after fs-3 text-white" href="#">
+        <img src="Images/logo.png" alt="Logo" width="30" height="37" class="d-inline-block align-items-center">
+        Weather</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+        aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav ms-auto me-1 gap-4">
+          <a class="nav-link active" aria-current="page" href="#">Home</a>
+          <a class="nav-link border-2 links_changes" href="#">news</a>
+          <a class="nav-link border-2 links_changes" href="#">Live Cameras</a>
+          <a class="nav-link border-2 links_changes">Photos</a>
+          <a class="nav-link border-2 links_changes" id="Contact_page">Contact</a>
+        </div>
+      </div>
+    </div>
+  </nav>
+  <div class="header">
+    <div class="head_image position-relative">
+      <div class="container">
+        <div class="w-100 d-flex align-items-center main_colour rounded-pill shadow">
+
+          <input type="search" placeholder="Find your location..." id="serch_input" class="form-control bg-transparent">
+          <button type="button" value="Find" id="Find_btn" class="text-white btn d-flex align-items-center">Find
+            <span class="btn_icon"><i class="fa-solid fa-magnifying-glass text-white ms-2 mt-1"></i></span>
+          </button>
+
+
+        </div>
+
+      </div>
+    </div>
+
+  </div>
+  <div class="position-relative">
+    <div class="container">
+      <div class="row d-flex justify-content-between overflow-hidden Forecast">
+
+        <div id="Current_Day" class="col-4 current_day">
+        </div>
+        <div id="Tomorrow_weather" class="col-4 Tomorrow_weather">
+        </div>
+        <div id="After_nextday" class="col-4 After_nextday"></div>
+
+      </div>
+    </div>
+  </div>
+  <footer>
+    <div class="container p-5">
+      <div class="row">
+        <div class="col-6 d-flex">
+          <input type="email" placeholder="Enter Your Email to Subscribe..." id="Subscribe_input"
+            class="form-control main_colour text-white rounded-pill shadow">
+          <button type="button" value="Subscribe" id="Subscribe_btn"
+            class="text-white btn d-flex align-items-center">Subscribe
+          </button>
+        </div>
+        <div class="col-md-6">
+          <div class="icons">
+            <ul class="d-flex ">
+              <li class="fs-1 clour_active list-unstyled ms-auto"><i class="fa-brands fa-facebook"></i></li>
+              <li class="fs-1 clour_active list-unstyled ms-auto"><i class="fa-brands fa-twitter"></i></li>
+              <li class="fs-1 clour_active list-unstyled ms-auto"><i class="fa-brands fa-google-plus"></i></li>
+              <li class="fs-1 clour_active list-unstyled ms-auto"><i class="fa-brands fa-pinterest"></i></li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-md-12">
+          <p class="fs-5 text-white-50 mt-5 ms-1">Copyright 2014 Company name. Designed by Themezy. All rights reserved
+          </p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="Js/bootstrap.bundle.min.js"></script>
+  <script src="Js/index.js"></script>
+</body>
+
+</html>
